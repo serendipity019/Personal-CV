@@ -50,8 +50,7 @@ img {
 .skillBox {
     width: 100%;
     background-color: var(--bg-colour);
-    border-color: aqua;
-   border-bottom: solid;
+    
 }
 
 .word {
