@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 :root {
     --round-box: #333333;  
     --bg-colour: #ffffff; 
@@ -14,17 +18,26 @@ body {
 
 .left-box {
     background-color: var(--left-div);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
-img {
-    width: 512px;
-    height: 512px;
+.my-img {
+   width: 95%;
+    /*max-width: 512px;
+    height: auto; */
+
     border-radius: 50%;
     border: solid 4px white;
 }
 
 .container {
     width: 95%;
+    min-height: 100vh; /* Makes sure container is at least the full screen height */
+    display: flex;
+    flex-direction: column; /* Ensures a vertical layout */
 }
 
 .bottom-rounded {
@@ -35,16 +48,41 @@ img {
 .top-rounded {
     border-top-left-radius: 45%;
     border-top-right-radius: 45% ;
+    width: 90%;
+}
+
+.full-height {
+    flex-grow: 1;
+}
+
+.row {
+    align-items: stretch;
+}
+.semi-round .top-rounded {
+    height: 100%; /* Ensures the box takes the full height */
 }
 
 .bi{
     border-radius: 50%;
 }
 
+
 .bi-mortarboard {
     width: 40px;
     height: 40px;
     background-color: var(--left-div);
+}
+
+.pb-6 {
+    padding-bottom: 500px;
+}
+
+.pt-6 {
+    padding-bottom: 100px;
+}
+
+.degree-text {
+    color: #c7bebe;
 }
 
 .skillBox {
@@ -60,3 +98,4 @@ img {
     border-radius: 15px;
     border: 1px solid black;
 }
+

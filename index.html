@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="./cv.css">
   </head>
   <body>
+    
     <div class="container">
-      <main class="row text-center">
-        <div class="left-box col-5 p-0">
+      <!--big box1-->
+      <main class="row text-center h-100 align-items-stretch">
+        <!--Small box1-->
+        <div class="left-box col-md-5 p-0 d-flex flex-column h-100">
           <div class="semi-round bottom-rounded">    
-            <div class="pb-3 ">
+            <div class="pb-3 relative ">
               <h1 class="text-white">PAPAPANAGIOTOU PANAGIOTIS</h1>
-              <img src="./img/photo profile.jpg" alt="photo profile">
+              <img class="my-img img-fluid" src="./img/photo profile.jpg" alt="photo profile">
             </div>
           </div>
-          
+          <!--Curent big box1-->
           <div class="d-flex justify-content-center align-items-center">
               
                 <i class="bi bi-person-circle text-white fs-2"></i>
@@ -38,33 +41,38 @@
             <p class="ms-1 pt-2">serendipitya137@gmail.com</p>
           </div>
           
-          <div class="semi-round top-rounded">
-            <div class="d-flex justify-content-center align-items-center pt-5">
-              <i class="bi bi-mortarboard fs-3 "></i>
-              <h2 class="text-white ms-1 pt-1">EDUCATION</h2>
-            </div>
-            
-            <div>
-              <h6 class="text-white">ATHENS UNIVERSITY OF ECONOMIC AND BUSINESS</h6>
-              <h7 class="mt-0 pt-0 mb-1">BACHELOR DEGREE GRADUATE</h7>
-              <h7>2018-2024</h7>
-            </div>  
-            
-            <div>
-              <h6 class="text-white">INSTITUTE OF DIGITAL FINANCE</h6>
-              <h7 class="mt-0 mb-1">MINI MASTER DEGREE GRADUATE</h7>
-              <h7>2022-2023</h7>
-            </div>  
+          <!--small box2-->
+          <div class="d-flex justify-content-center h-100"> 
+            <div class="semi-round top-rounded align-items-center p-4 h-100 "> 
+              
+              <div class="d-flex justify-content-center align-items-center pt-5 mb-3"> <!--big header style-->
+                <i class="bi bi-mortarboard fs-3 "></i>
+                <h2 class="text-white ms-1 pt-1">EDUCATION</h2>
+              </div>
+              
+              <div class="mb-4 mt-1"> 
+                <h6 class="text-white">ATHENS UNIVERSITY OF ECONOMIC AND BUSINESS</h6>
+                <h7 class="degree-text">BACHELOR DEGREE GRADUATE</h7>
+                <h7 class="degree-text">2018-2024</h7>
+              </div>  
+              
+              <div class="mb-4"> 
+                <h6 class="text-white">INSTITUTE OF DIGITAL FINANCE</h6>
+                <h7 class="degree-text">MINI MASTER DEGREE GRADUATE</h7>
+                <h7 class="degree-text">2022-2023</h7>
+              </div>  
 
-            <div>
-              <h6 class="text-white">SCHOOL OF POLICE CONSTABLES OF THE HELLENIC POLICE IN KOMOTINI</h6>
-              <h7>BACHELOR DEGREE GRADUATE</h7>
-              <h7>2006-2008</h7>
-            </div> 
-          </div>
+              <div class="mb-2 pb-6">
+                <h6 class="text-white">SCHOOL OF POLICE CONSTABLES OF THE HELLENIC POLICE IN KOMOTINI</h6>
+                <h7 class="degree-text">BACHELOR DEGREE GRADUATE</h7>
+                <h7 class="degree-text">2006-2008</h7>
+              </div> 
+            </div>
+          </div> 
         </div>
 
-        <div class="col-7">
+        <!--big box 2-->
+        <div class="col-md-7">
           <div class="d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-user-tie fs-4"></i>
             <h2 class="ms-1 pt-2">ABOUT ME</h2>
@@ -149,7 +157,7 @@
                   </div>
                 </div>
                 <div class="d-flex justify-content-left align-items-center">
-                  <li>Azure SQL Database</li>
+                  <li class="">Azure SQL Database</li>
                   <div class="SkillBox">
                     <div class="azure ms-1"></div>
                   </div>
@@ -263,8 +271,8 @@
             </div>
           </div>
 
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-sm-6">
               <div class="d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-earth-africa fs-2"></i>
                 <h2 class="ms-1 pt-2">LANGUAGE</h2>  
@@ -276,7 +284,7 @@
               </ul>
             </div>
             
-            <div>
+            <div class="col-sm-6">
               <div class="d-flex justify-content-center align-items-center">
                 <i class="fa-solid fa-person-skiing fs-2"></i>
                 <h2 class="ms-1 pt-2">HOBBIES</h2>
