@@ -51,13 +51,11 @@ body {
     width: 90%;
 }
 
-.full-height {
-    flex-grow: 1;
-}
-
 .row {
     align-items: stretch;
 }
+
+
 .semi-round .top-rounded {
     height: 100%; /* Ensures the box takes the full height */
 }
@@ -77,6 +75,12 @@ body {
     padding-bottom: 500px;
 }
 
+@media (max-width: 767px) { /* Apply for screens smaller than md */
+    .pb-6 {
+        padding-bottom: 0 !important; 
+    }
+}
+
 .pt-6 {
     padding-bottom: 100px;
 }
@@ -85,17 +89,44 @@ body {
     color: #c7bebe;
 }
 
-.skillBox {
-    width: 100%;
-    background-color: var(--left-div);
+.empty-box {
+    width: 90%;
+    height: max-content;
+    background-color: var(--round-box);
     
+}
+
+/* Skill Boxes*/
+.skillBox {
+    width: 100px;
+    background-color: var(--left-div);
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.skillBox {
+    justify-content: flex-start !important;
+}
+.skill-name {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .word {
     width: 90%;
-    height:5px;
+    height:12px;
     background-color: green;
     border-radius: 15px;
-    border: 1px solid black;
+    text-align: right;
+    color: White;
+}
+
+.numper {
+    font-size: 60%;
+
 }
 
