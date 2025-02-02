@@ -1,132 +1,19 @@
-html, body {
-    height: 100%;
-}
+body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: #fefefe;}
 
-:root {
-    --round-box: #333333;  
-    --bg-colour: #ffffff; 
-    --left-div: #c7bebe; 
-}
-
-.semi-round {
-    background-color: var(--round-box);
-}
-
-body {
-    background-color: var(--bg-colour);
-}
-
-.left-box {
-    background-color: var(--left-div);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
-.my-img {
-   width: 95%;
-    /*max-width: 512px;
-    height: auto; */
-
-    border-radius: 50%;
-    border: solid 4px white;
-}
-
-.container {
-    width: 95%;
-    min-height: 100vh; /* Makes sure container is at least the full screen height */
-    display: flex;
-    flex-direction: column; /* Ensures a vertical layout */
-}
-
-.bottom-rounded {
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 45% ;
-}
-
-.top-rounded {
-    border-top-left-radius: 45%;
-    border-top-right-radius: 45% ;
-    width: 90%;
-}
-
-.row {
-    align-items: stretch;
-}
-
-
-.semi-round .top-rounded {
-    height: 100%; /* Ensures the box takes the full height */
-}
-
-.bi{
+.cf-profile-pic {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
     border-radius: 50%;
 }
 
-
-.bi-mortarboard {
-    width: 40px;
-    height: 40px;
-    background-color: var(--left-div);
+.cf-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #0d6efd; 
 }
 
-.pb-6 {
-    padding-bottom: 500px;
+.cf-contact-info i {
+    margin-right: 8px;
 }
-
-@media (max-width: 767px) { /* Apply for screens smaller than md */
-    .pb-6 {
-        padding-bottom: 0 !important; 
-    }
-}
-
-.pt-6 {
-    padding-bottom: 100px;
-}
-
-.degree-text {
-    color: #c7bebe;
-}
-
-.empty-box {
-    width: 90%;
-    height: max-content;
-    background-color: var(--round-box);
-    
-}
-
-/* Skill Boxes*/
-.skillBox {
-    width: 100px;
-    background-color: var(--left-div);
-    border: 1px solid black;
-    border-radius: 15px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.skillBox {
-    justify-content: flex-start !important;
-}
-.skill-name {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.word {
-    width: 90%;
-    height:12px;
-    background-color: green;
-    border-radius: 15px;
-    text-align: right;
-    color: White;
-}
-
-.numper {
-    font-size: 60%;
-
-}
-
