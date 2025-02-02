@@ -75,6 +75,14 @@ body {
     padding-bottom: 500px;
 }
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    width: 60%; 
+    margin: auto; /* Center it within the outer box */
+}
+
 @media (max-width: 767px) { /* Apply for screens smaller than md */
     .pb-6 {
         padding-bottom: 0 !important; 
