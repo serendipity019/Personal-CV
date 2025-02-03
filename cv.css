@@ -129,6 +129,7 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
+    
 }
 
 .word {
@@ -139,13 +140,13 @@ body {
     border-bottom-left-radius:10px;
     text-align: right;
     color: White;
-    position: absolute;
+    position: absolute;    
 }
 
 .number {
     font-weight: bold;
     font-size: 60%;
     text-align: end;
-    padding-right: 4px;
+    padding-right: 4px;   
 }
 
