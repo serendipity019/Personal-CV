@@ -107,17 +107,19 @@ body {
 /* Skill Boxes*/
 .skillBox {
     width: 100px;
+    height: 13px;
     background-color: var(--left-div);
+    border-radius: 10px;
+    position: relative;
     border: 1px solid black;
-    border-radius: 15px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
-.skillBox {
-    justify-content: flex-start !important;
-}
+.skill-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
 .skill-name {
     list-style: none;
     display: flex;
@@ -126,15 +128,19 @@ body {
 
 .word {
     width: 90%;
-    height:12px;
+    height:11px;
     background-color: green;
-    border-radius: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
     text-align: right;
     color: White;
+    position: absolute;
 }
 
-.numper {
+.number {
+    font-weight: bold;
     font-size: 60%;
-
+    text-align: end;
+    padding-right: 4px;
 }
 
